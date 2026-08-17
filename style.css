@@ -291,6 +291,69 @@ button:hover
     border-color: white;
 }
 
+#Estudios .contenedor-estudio
+{
+    background-color: #1e1e1f;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #00aaff;
+    text-align: center;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+#Estudios .contenedor-estudio:hover
+{
+    transform: translateY(-5px);
+    border-color: white;
+}
+
+#Estudios .contenedor-estudio h3
+{
+    color: #00aaff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#Estudios .contenedor-estudio p
+{
+    color: #cccccc;
+    font-size: 16px;
+}
+
+#Estudios .contenedor-estudio span
+{
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+#Estudios .progreso
+{
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#Estudios .barra-progreso
+{
+    width: 30%;
+    height: 100%;
+    background-color: #00aaff;
+    border-radius: 10px;
+}
+
+#Estudios .contenedor-estudio:hover .progreso
+{
+    opacity: 1;
+}
+
+
 
 .Habilidad h3
 {
@@ -426,4 +489,6 @@ button:hover
     {
         font-size: 14px;
     }
+
+    
 }
