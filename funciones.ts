@@ -22,12 +22,13 @@ const intro = document.getElementById("intro");
 const entranding = document.getElementById("entranding");
 
 
-if(entranding != null && intro != null)
+if (entranding != null && intro != null)
 {
-    entranding.addEventListener("click",() => {
-        
-        intro.classList.add("salir"); 
-    
-    });
+    entranding.addEventListener("click", () => {
 
+        intro.classList.add("salir");
+
+        document.body.classList.remove("intro-activa");
+
+    });
 }
