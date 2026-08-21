@@ -472,6 +472,84 @@ button:hover
     line-height: 1.5;
 }
 
+#intro
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.intro-cont
+{
+    text-align: center;
+    animation: aparecer 1s ease;
+}
+
+.intro-cont h2
+{
+    color: #00aaff;
+    font-size: 50px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.intro-cont p
+{
+    color: #cccccc;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#entranding
+{
+    background-color: #2f00ff;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#entranding:hover
+{
+    background-color: #00f8cc;
+    color: black;
+    transform: scale(1.05);
+}
+
+#intro.salir
+{
+    opacity: 0;
+    transform: scale(1.1);
+    pointer-events: none;
+}
+
+@keyframes aparecer
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
 @media (max-width: 700px)
 {
     .contenedor-proyectos
