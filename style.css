@@ -479,7 +479,9 @@ button:hover
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #121212;
+    background-image: url("galaxia.gif");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -491,6 +493,13 @@ button:hover
 {
     text-align: center;
     animation: aparecer 1s ease;
+    padding: 50px 70px;
+    background-image: linear-gradient(rgba(18,18,19,0.60), rgba(18,18,19,0.60)), url("intro.gif");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #00aaff;
+    border-radius: 25px;
+    
 }
 
 .intro-cont h2
@@ -503,7 +512,7 @@ button:hover
 
 .intro-cont p
 {
-    color: #cccccc;
+    color: #01d5f1;
     font-size: 20px;
     margin-bottom: 40px;
 }
@@ -512,8 +521,8 @@ button:hover
 {
     background-color: #2f00ff;
     color: white;
-    border: none;
-    padding: 15px 35px;
+    border: 5px solid #00aaff;
+    padding: 15px 40px;
     font-size: 20px;
     cursor: pointer;
     border-radius: 8px;
@@ -522,15 +531,15 @@ button:hover
 
 #entranding:hover
 {
-    background-color: #00f8cc;
+    background-color: #00aaff;
     color: black;
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 #intro.salir
 {
     opacity: 0;
-    transform: scale(1.1);
+    transform: scale(1.15);
     pointer-events: none;
 }
 
@@ -539,13 +548,15 @@ button:hover
     from
     {
         opacity: 0;
-        transform: translateY(35px);
+
+        transform: translateY(40px);
     }
-    
+
     to
     {
         opacity: 1;
-        transform: translateY(0);
+
+        transform: translateY(0) scale(1);
     }
 
 }
