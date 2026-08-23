@@ -27,7 +27,7 @@ header
 {
     background-color: #1e1e1e;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     position:  sticky;
     top: 0;
     z-index: 1000;
@@ -385,15 +385,16 @@ button:hover
 
 .hero h2
 {
-    color: rgb(154, 7, 223);
+    color: #00aaff;
     font-size: 43px;
     margin-bottom: 30px;
     border-bottom: none;
+    text-shadow: 0 0 15px #00aaff;
 }
 
 .hero h3
 {
-    color: #d40c98;
+    color: #00aaff;
     font-size: 25px;
     margin-bottom: 25px;
 }
@@ -402,7 +403,7 @@ button:hover
 {
     max-width: 700px;
     margin: 10px auto;
-    color: rgb(236, 21, 21);
+    color: white;
     line-height: 1.5;
 }
 
