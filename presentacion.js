@@ -61,32 +61,32 @@ const canciones = [
     {
         nombre: "A_Tout_Le_Monde",
         artista: "Megadeth",
-        archivo: "musica/megadeth.mp3",
-        portada: "portadas/youthanasia.jpg"
+        archivo: "megadeth.mp3",
+        portada: "youthanasia.jpg"
     },
     {
         nombre: "In_My_Time_of_Dying",
         artista: "Led Zeppelin",
-        archivo: "musica/ledzepp.mp3",
-        portada: "portadas/led.jpg"
+        archivo: "ledzepp.mp3",
+        portada: "led.jpg"
     },
     {
         nombre: "Strange_Kind_of_Woman",
         artista: "Deep Purple",
-        archivo: "musica/deep.mp3",
-        portada: "portadas/dp.jpg"
+        archivo: "deep.mp3",
+        portada: "dp.jpg"
     },
     {
         nombre: "War_Pigs",
         artista: "Black Sabbath",
-        archivo: "musica/black.mp3",
-        portada: "portadas/ozzy.jpg"
+        archivo: "black.mp3",
+        portada: "ozzy.jpg"
     },
     {
         nombre: "Echoes_(Live_in_Pompeii)",
         artista: "Pink Floyd",
-        archivo: "musica/pink.mp3",
-        portada: "portadas/floyd.jpg"
+        archivo: "pink.mp3",
+        portada: "floyd.jpg"
     }
 ];
 ///////////////////////////////////////////////////////////////
