@@ -1,0 +1,207 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main
+{
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1
+{
+    color: #00aaff;
+    font-size: 40px;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: titulo 0.8s ease;
+}
+
+section
+{
+    background-color: #1e1e1f;
+    padding: 35px;
+    border-radius: 30px;
+    border: 5px solid #00aaff;
+    text-align: justify;
+}
+
+section h2
+{
+    color: #00aaff;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+section p
+{
+    color: #cccccc;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.dato strong
+{
+    color: #00aaff;
+}
+
+.dato
+{
+    color: #cccccc;
+    font-size: 17px;
+    transition: color 0.3s, transform 0.5s;
+    opacity: 0;
+    animation: aparecer 0.6s ease forwards;
+}
+
+.dato:hover, .dato:hover strong
+{
+    color:#00aaff;
+    transform: translateX(10px);
+    text-shadow: 0, 0, 10px #00aaff;
+    
+}
+
+button
+{
+    background-color: #2f00ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top:30px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover
+{
+    background-color: #00f8cc;
+    color:#121212;
+    transform: translateY(-4px);
+}
+
+.modo-claro
+{
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.modo-claro h1
+{
+    color: #0077aa;
+}
+
+.modo-claro .dato
+{
+    color: #312424;
+    opacity: 1;
+}
+
+.modo-claro .dato strong
+{
+    color: #000000;
+    opacity: 1;
+}
+
+.modo-claro section
+{
+    background-color: white;
+}
+
+
+#modoco
+{
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#modoco:hover
+{
+    background-color: #00cc1b;
+}
+
+.dato:nth-child(1)
+{
+    animation-delay: 0.2s;
+}
+
+.dato:nth-child(2)
+{
+    animation-delay: 0.4s;
+}
+
+.dato:nth-child(3)
+{
+    animation-delay: 0.6s;
+}
+
+.dato:nth-child(4)
+{
+    animation-delay: 0.8s;
+}
+
+.dato:nth-child(5)
+{
+    animation-delay: 1s;
+}
+
+.dato:nth-child(6)
+{
+    animation-delay: 1.2s;
+}
+
+.dato:nth-child(7)
+{
+    animation-delay: 1.4s;
+}
+
+
+
+
+@keyframes aparecer
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes titulo
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -55,7 +55,49 @@ nav a:hover
     border-bottom: 2px solid darkviolet;
 }
 
+.menu-sobre-mi
+{
+    position: relative;
+}
 
+.submenu
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e1e1e;
+    border: 1px solid #00aaff;
+    border-radius: 10px;
+    padding: 8px;
+    width: 190px;
+}
+
+.submenu a
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    border-bottom: none;
+    text-align: left;
+}
+
+.submenu a:hover
+{
+    background-color: #00aaff;
+    color:#121212;
+    border-bottom: none;
+}
+
+.menu-sobre-mi:hover .submenu
+{
+    
+    display: flex;
+    flex-direction: column;
+
+}
 
 main
 {
@@ -130,8 +172,6 @@ main
 {
     color: white;
 }
-
-
 
 #modoco
 {

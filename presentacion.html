@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Presentacion - Lautaro</title>
+
+        <link rel="stylesheet" href="presentacion.css">
+
+    </head>
+
+    <body>
+
+        <div id="pantalla_inicio">
+
+            <div class="terminal_inicio">
+
+                <p>> cargando_información...</p>
+
+                <p>> abriendo_archivo...</p>
+                <span class="cursor">_</span>
+
+            </div>
+
+        </div>
+
+        <main>
+
+            <header>
+
+                <p class="codigo">/presentacion.html</p>
+
+                <h1>Hola soy Lautaro</h1>
+
+                <p class="descripcion">
+
+                    estudiante de ingenieria informatica
+
+                </p>
+
+                <nav>
+                    <a href="#quien_soy">Sobre_mi</a>
+                    <a href="#como_soy">Como_soy</a>
+                    <a href="#intereses">Intereses</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#estudios">Estudios</a>
+                    <a href="#hice">Lo_que_hice</a>
+                    <a href="#objetivos">Objetivos</a>
+                    <a href="#voy">Hacia_donde_voy</a>
+                </nav>
+
+            </header>
+
+            <div class="contenido">
+
+                <section class="tarjeta">
+
+                    <div id="quien_soy" class="tarjeta_titulo">
+                        ¿Quien_soy?
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <p>
+                            Holaa, me llamo Lautaro Manuel Carnicero Garcia, me dicen Lauti,
+                            tengo 22 años y soy estudiante de Ingenieria Informatica
+                        </p>
+
+                        <p>
+                            Actualmente me encuentro formandome en el universo de la
+                            informatica, descubriendo continuamente nuevas areas y
+                            tecnologias que despiertan mi interes por la carrera
+                        </p>
+
+
+                    </div>
+
+                </section>
+
+                <section class="tarjeta">
+
+                    <div id="como_soy" class="tarjeta_titulo">
+                        ¿Como_soy?
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <p>
+                            Soy un chico bastante empatico y muy lanzado. Tengo mucho
+                            sentido del humor y suelo estar haciendo algun chiste o
+                            intentando sacarle una sonrisa a los demás
+                        </p>
+
+                        <p>
+                            Tambien soy bastante perfeccionista con <strong>TODO</strong>
+                            lo que hago, cuando algo me interesa, me gusta hacerlo de la
+                            mejor manera posible y prestar atencion continuamente,
+                            incluso a los pequeños detalles
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="tarjeta">
+
+                    <div id="intereses" class="tarjeta_titulo">
+                        Mis_intereses
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <p>
+                            Mis intereses son bastante variados, me gustan los
+                            jueguitos, la musica, el arte, la fotografia, la lectura
+                            y la programacion, tanto frontend como backend
+                        </p>
+
+                        <p>
+                            Tambien me interesa muchisimo la historia, los aviones
+                            y prácticamente cualquier dato random que pueda aprender,
+                            ya sea cientifico, historico o simplemente algo que me
+                            parezca interesante
+                        </p>
+
+                        <p>
+                            Basicamente, si existe algo que me pueda interesar,
+                            probablemente termine investigandolo de una manera u otra
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="tarjeta">
+
+                    <div id="hobbies" class="tarjeta_titulo">
+                        Mis_hobbies
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <p>
+                            Entre mis hobbies está la musica: toco la guitarra y
+                            el teclado, y disfruto muchisimo escuchar musica
+                            (sobre todo metal)
+                        </p>
+
+                        <p>
+                            También me gusta dibujar, coleccionar vinilos y
+                            escucharlos una y otra vez, ademas de leer (bastante)
+                        </p>
+
+                        <p>
+                            Me gusta tener hobbies que me permitan crear, aprender
+                            o simplemente desconectar un rato de todo lo demas,
+                            o tambien llamado "el cable a tierra"
+                        </p>
+
+                    </div>
+
+                </section>
+
+               <section class="tarjeta" id="musica">
+
+                    <div class="tarjeta_titulo">
+                        NOW_PLAYING
+                    </div>
+
+                    <div class="tarjeta_contenido reproductor">
+
+                        <div class="album">
+
+                            <div class="album_imagen">
+
+                                <img id="portada" src="musica/portadas/youthanasia.jpg" alt="Portada del álbum">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="informacion_musica">
+
+                            <p class="cancion" id="nombre_cancion">
+                                A_Tout_Le_Monde
+                            </p>
+
+                            <p class="artista" id="nombre_artista">
+                                Megadeth
+                            </p>
+
+
+                            <audio id="audio">
+
+                                <source
+                                    src="musica/megadeth.mp3"
+                                    type="audio/mpeg">
+
+                            </audio>
+
+
+                            <div class="barra_musica">
+
+                                <div
+                                    class="progreso"
+                                    id="progreso">
+                                </div>
+
+                            </div>
+
+
+                            <div class="tiempo">
+
+                                <p>   </p>
+
+                                <span id="tiempo_actual">
+                                    00:00
+                                </span>
+
+                                <span id="tiempo_total">
+                                    00:00
+                                </span>
+
+                            </div>
+
+
+                            <div class="controles">
+
+                                <button id="anterior">
+                                    ◀
+                                </button>
+
+                                <button id="reproducir">
+                                    ▶
+                                </button>
+
+                                <button id="siguiente">
+                                    ▶▶
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="playlist">
+
+                        <div class="cancion_lista activa" data-cancion="0">
+                            <p> >Megadeth</p>
+                        </div>
+
+                        <div class="cancion_lista" data-cancion="1">
+                            <p> >Led_Zeppelin</p>
+                        </div>
+
+                        <div class="cancion_lista" data-cancion="2">
+                            <p> >Deep_Purple</p>
+                        </div>
+
+                        <div class="cancion_lista" data-cancion="3">
+                            <p> >Black_Sabbath</p>
+                        </div>
+
+                        <div class="cancion_lista" data-cancion="4">
+                            <p> >Black_Sabbath</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="tarjeta">
+
+                    <div id="estudios" class="tarjeta_titulo">
+
+                        Lo_que_estudie
+
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <h3>Ingenieria_Informatica</h3>
+
+                        <p>
+                            Actualmente estudio Ingenieria Informatica en la
+                            Universidad Nacional de La Matanza (UNLaM), una carrera que
+                            me permite formarme en programacion, sistemas, sistemas embebidos
+                            arquitectura de computadoras, diseño web, QA y diferentes areas
+                            de la informatica
+                        </p>
+
+                        <h3>Piloto_Privado_de_Avión_(PPA)</h3>
+
+                        <p>
+                            Por otro lado, estudie la carrera de Piloto Privado
+                            de Avion. Si bien actualmente lo veo más como un
+                            posible hobby para el futuro, fue una experiencia
+                            que me permitio conocer un mundo completamente diferente
+                            e interesante
+                        </p>
+
+                        <p>
+                            Tambien disfruto muchisimo hacer cursos y capacitaciones,
+                            especialmente cuando puedo profundizar en algun tema
+                            que me interese, no necesariamente necesito que algo
+                            me sirva laboralmente para querer aprenderlo
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="tarjeta">
+
+                    <div id="hice" class="tarjeta_titulo">
+                        Lo_que_hice
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <p>
+                            A lo largo de mi vida hice muchas cosas diferentes
+                        </p>
+
+                        <p>
+                            En el ambito artístico forme alguna que otra bandita
+                            de musica y pinte cuadros, generalmente muy relacionados
+                            con bandas musicales que me gustan
+                        </p>
+
+                        <p>
+                            Tambien doy clases particulares de programacion,
+                            electronica, matematicas y arquitectura de computadoras
+                        </p>
+
+                        <p>
+                            Y, saliendo completamente de la informatica, soy
+                            cinturón negro de Taekwondo y fui profesor de
+                            defensa personal
+                        </p>
+
+                        <p>
+                            También hace mas de 19 años que hago natacion
+                            y practico deportes acuaticos
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="tarjeta">
+
+                    <div id="objetivos" class="tarjeta_titulo">
+                        Mis_objetivos
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <h3>Corto_/_Mediano_plazo</h3>
+
+                        <p>
+                            Conocer muchos paises diferentes, principalmente por
+                            su historia y cultura
+                        </p>
+
+                        <p>
+                            Recibirme de Ingenieria Informatica y continuar
+                            aprendiendo todo lo que pueda
+                        </p>
+
+                        <p>
+                            Y cumplir uno de mis objetivos más importantes:
+                            ser profesor universitario
+                        </p>
+
+                        <h3>Largo_plazo</h3>
+
+                        <p>
+                            Lograr independencia economica y construir una vida
+                            que pueda disfrutar plenamente
+                        </p>
+
+                        <p>
+                            Quiero vivir de la manera más euforica posible,
+                            aprovechando las oportunidades que aparezcan y
+                            disfrutando todo el camino
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="tarjeta">
+                    <div id="voy" class="tarjeta_titulo">
+                        ¿Hacia_donde_voy?
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <p>
+                            Creo que esta es probablemente una de las preguntas
+                            más dificiles que me hice a mi mismo
+                        </p>
+
+                        <p>
+                            Creo que uno nunca sabe realmente a donde esta yendo,
+                            sino más bien a donde quiere ir, y aunque no sean
+                            exactamente lo mismo, ambos conceptos van de la mano
+                            continuamente
+                        </p>
+
+                        <p>
+                            Podría decir que voy hacia donde me lleve el viento,
+                            porque siento que es hermoso permitir que la vida
+                            te sorprenda
+                        </p>
+
+                        <p>
+                            Pero nunca dejo que el viento me lleve sin un "mapa"
+                            en la mano
+                        </p>
+
+                        <p>
+                            Porque por mas vientos que haya,
+                            nunca dejaria que me desvíen del camino
+                            que quiero seguir
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="tarjeta">
+
+                    <div class="tarjeta_titulo">
+                        Dato random
+                    </div>
+
+                    <div class="tarjeta_contenido">
+
+                        <p id="dato_random">
+                            Hace más de 19 años que hago natación
+                        </p>
+
+                        <button id="nuevo_dato">
+                            Otro_dato
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <a href="index.html">
+                <button>Volver_al_portfolio</button>
+            </a>
+
+        </main>
+            
+
+    </body>
+
+    <script src="presentacion.js" defer></script>
+
+
+</html>
