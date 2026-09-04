@@ -1,0 +1,256 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-image: url("catito.png");
+    background-repeat: repeat;
+    background-size: 500px;
+}
+header
+{
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+header h1 
+{
+    display: inline-block;
+    margin: 0;
+    padding: 15px 35px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #7c5aa6;
+    background: white;
+    border: 4px solid #b45aa8;
+    border-radius: 30px;
+    box-shadow: 8px 8px 0px #d9b6df;
+    transform: rotate(-2deg);
+}
+
+header p 
+{
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #806477;
+}
+
+main
+{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.docencia
+{
+    text-align: center;
+    padding: 30px;
+}
+
+.docencia p
+{
+    color: #806477;
+    margin-bottom: 40px;
+}
+
+.materias
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.materia
+{
+    padding: 30px;
+    background: white;
+    border-radius: 30px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(120, 80, 120, 0.20);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: aparecer 0.5s ease forwards;
+}
+
+.materia:nth-child(1)
+{
+    animation-delay: 0.4s;
+}
+
+
+.materia:nth-child(2)
+{
+    animation-delay: 0.6s;
+}
+
+
+.materia:nth-child(3)
+{
+    animation-delay: 0.8s;
+}
+
+
+.materia:nth-child(4)
+{
+    animation-delay: 1s;
+}
+
+.materia:nth-child(5)
+{
+    animation-delay: 1.2s;
+}
+
+
+.materia:hover
+{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(120, 80, 120, 0.25);
+}
+
+.materia h3
+{
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #b45aa8;
+}
+
+.materia p
+{
+    line-height: 1.7;
+    color: #665565;
+}
+
+.materia:hover .gato img
+{
+    transform: scale(1.1);
+}
+
+.gato img
+{
+    max-width: 180px;
+    max-height: 140px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+button
+{
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 3px solid #b45aa8;
+    color: red;
+    position: relative;
+    background: whitesmoke;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover
+{
+    color: white;
+    background: #b45aa8;
+    transform: scale(1.06);
+}
+
+.gato
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+.gato img
+{
+    max-width: 180px;
+    max-height: 140px;
+    object-fit: contain;
+}
+
+.gato_caminando
+{
+    position: fixed;
+    left: -150px;
+    bottom: 30px;
+    z-index: 1000;
+    pointer-events: none;
+    animation: caminar 7s linear infinite;
+}
+
+
+.gato_caminando img
+{
+    width: 100px;
+    display: block;
+}
+
+.materia:last-child {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+}
+
+@media (max-width: 700px) {
+
+    .materia:last-child {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 700px)
+{
+    .materias
+    {
+        grid-template-columns: 1fr;
+    }
+
+
+    header h1
+    {
+        font-size: 2.3rem;
+    }
+}
+
+@keyframes aparecer
+{
+    from
+    {
+        opacity: 0;
+
+        transform: translateY(30px);
+    }
+
+    to
+    {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@keyframes caminar
+{
+    0%
+    {
+        left: -150px;
+    }
+
+    100%
+    {
+        left: 100%;
+    }
+}
